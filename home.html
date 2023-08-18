@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background-color:rgb(216, 196, 183) ;
+    height: 1200px;
+    display: flex;
+    height: 2400px;
+}
+.min-container{
+   align-content: center;
+   align-items: center;
+   width: 1400px;
+}
+
+.box-top{
+    margin-left:1%;
+    box-shadow: 5px 5px 5px 0px rgb(138, 136, 136);
+    border-radius: 20px;
+    width: 1300px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+   position:fixed;
+    padding: 0%;
+   display: flex;
+   border-radius: 20px
+   
+}
+.logo{
+border-radius: 0%;
+
+
+}
+.search:hover{
+    background-color:white ;
+}
+.search{
+    color: rgb(163, 163, 163);
+    cursor: text;
+    background-color: rgb(230, 230, 230);
+    margin: 200px;
+    margin-top: 35px;
+    height: 55px;
+    width: 600px;
+    position: absolute;
+    top: 12%;
+    border-radius: 1%;
+    border: none;
+}
+#heading{
+    cursor: pointer;
+    margin-left: 610px;
+    margin-top: 13%;
+    color: rgb(165, 103, 103);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    
+}
+#Contect{
+    cursor: pointer;
+    margin-left: 11px;
+    color: rgb(165, 103, 103);
+    margin-top: 93%;
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#cart{
+    margin-left: 15px;   
+    margin-top: 110%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.login-button{
+    color: rgb(255, 255, 255);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-style: italic;
+font-weight: 300;
+background-color: rgb(19, 209, 19);
+height: 40px;
+width: 100px;
+border-radius: 10px;
+text-align: center;
+margin-top: 6%;
+text-decoration: none;
+margin-left: 15px;
+display: block;
+line-height: 40px;
+
+}
+.banner{
+    transition: transform 0.8s;
+    margin-left:1%;
+    margin-top:18%;
+    border-radius:20px;
+    width: 1300px;
+    height: 300px;
+    cursor: pointer;
+   box-shadow: 15px 15px 15px 0px rgb(135, 131, 131) ;
+   
+}
+.banner:hover{
+    transform: translate(10px);
+}
+
+
+#imgbanner{
+    border-radius: 30px;
+    align-items: center;
+    width: 1300px;
+    height: 300px;
+   
+}
+
+
+.container1 {
+    height: 400px;
+    width: 1300px;
+    background-color: #fff;
+    margin-top: 5%;
+    margin-left:1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+#h1CETAGEORY{
+    text-align: center;
+    padding: 2%;
+    color: rgb(150, 22, 10);
+   text-shadow: aqua;
+   
+}
+.container2{
+    height: 800px;
+    width: 1300px;
+    background-color: #fff;
+    margin-top: 5%;
+    margin-left:1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+   margin: initial;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+   
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+
+}
+.footer-col{
+   
+   width: 35%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+    </style>
+   
+    <link rel="stylesheet" type="text/css" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="min-container">
+    <div class="box-top">
+        <div class="logo"><a href="singup.html"><img src="LL.png" alt="" width="200px"></a></div>
+        <br> <input class="search" type="search" placeholder="search by AL Ziyarah" width="2000px">
+        <a href="home.html">
+            <h3 id="heading"> HOME</h3>
+        </a>
+        <a href="contect.htm">
+            <h3 id="Contect">CONTECT</h3>
+        </a>
+        <a href="cart.htm"> <img src="cartt.png" id="cart" alt="" width="70px" height="70px"></a>
+        <a class="login-button" href="singup.htm">sing up</a>
+    </div>
+    <div class="banner"><img id="imgbanner" src="banner001.png" alt="">
+    </div>
+    <h1 id="h1CETAGEORY">PRODUCT CETAGEORY</h1>
+    <hr id="hr1">
+  <div class="container1">
+    
+  </div>
+  <div class="container2">
+
+  </div>
+--
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+
+</body>
+
+</html>
